@@ -1,0 +1,88 @@
+/* Mengatur tampilan latar belakang dan warna teks */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+}
+
+/* Mengatur tampilan container */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: 0; /* Diperlukan untuk posisi elemen child */
+    background-image: url('assets/images/prambanan.jpg'); /* Menampilkan gambar latar belakang */
+    background-size: cover; /* Menyesuaikan gambar latar belakang dengan ukuran container */
+    background-position: center; /* Pusatkan gambar latar belakang */
+    background-attachment: fixed; /* Tetapkan gambar latar belakang */
+}
+
+/* Mengatur tampilan wrapper */
+.registration-section-wrapper {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(27, 238, 253, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+    position: relative; /* Diperlukan untuk posisi elemen child */
+    z-index: 1; /* Mengirimkan elemen ke lapisan depan */
+}
+
+/* Mengatur tampilan logo */
+.logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Mengatur tampilan judul registrasi */
+.registration-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Mengatur tampilan formulir */
+.form-control {
+    border: 1px solid #cccccc24;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Mengatur tampilan tombol registrasi */
+.registration-btn {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Mengatur tampilan tautan "Log in here" */
+.registration-wrapper-footer-text {
+    text-align: center;
+}
+
+.registration-wrapper-footer-text a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Mengatur tampilan formulir di samping gambar */
+@media (min-width: 768px) {
+    .row {
+        flex-direction: row-reverse; /* Mengubah arah tata letak kolom pada perangkat dengan lebar layar minimal 768px */
+    }
+
+    .col-sm-6.registration-section-wrapper {
+        margin-right: -350px; /* Jarak antara gambar dan formulir */
+    }
+}
